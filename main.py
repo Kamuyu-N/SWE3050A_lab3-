@@ -63,35 +63,22 @@ def surface_area_open_cylinder(r, h):
     return base + lateral
 
 def menu():
-    print("\nChoose calculation:")
-    print("1. Area of a circle")
-    print("2. Area of a semicircle")
-    print("3. 1/4 the area of a circle")
-    print("4a. Radius from area of a circle")
-    print("4b. Radius from perimeter of a circle")
-    print("4c. Radius from diameter of a circle")
-    print("5. Perimeter of 1/4 of a circle")
-    print("6. Perimeter of a circle")
-    print("7. Perimeter of a semicircle")
-    print("8. Diameter of a circle")
-    print("9. Surface area of a cube")
-    print("10. Surface area of cube (1 open side)")
-    print("11. Volume of a cylinder")
-    print("12. 1/2 the volume of a cylinder")
-    print("13. 1/3 the volume of a cylinder")
-    print("14. Volume of a cube")
-    print("15. 1/2 the surface area of a cube")
-    print("16. Area of a square")
-    print("17. Surface area of an open cylinder (one end open)")
-    print("18. Type of triangle calculation")
-    print("0. Exit")
+    print("\n\t\t\t\t\t\t\t\t\t\t\t\Choose calculation\n")
+    print("1.  Area of a circle".ljust(35), "2.  Area of a semicircle".ljust(35), "3.  1/4 area of a circle")
+    print("4a. Radius from area".ljust(35), "4b. Radius from perimeter".ljust(35), "4c. Radius from diameter")
+    print("5.  Perimeter of 1/4 circle".ljust(35), "6.  Perimeter of a circle".ljust(35),  "7.  Perimeter of a semicircle")
+    print("8.  Diameter of a circle".ljust(35), "9.  Surface area of a cube".ljust(35),"10. Surface area (1 open side)")
+    print("11. Volume of a cylinder".ljust(35), "12. 1/2 volume of cylinder".ljust(35), "13. 1/3 volume of cylinder")
+    print("14. Volume of a cube".ljust(35), "15. 1/2 surface area of cube".ljust(35), "16. Area of a square")
+    print("17. Surface area (open cylinder)".ljust(35), "18. Type of triangle calculation".ljust(35), "0. Exit")
+
 
 def main():
     while True:
 
 
         menu()
-        choice = input("Enter choice: ")
+        choice = input("\nEnter choice: ")
         try:
             if choice == '1':
                 r = float(input("Radius: "))
