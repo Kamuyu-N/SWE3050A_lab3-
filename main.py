@@ -18,7 +18,7 @@ def radius_from_perimeter(p):
     return p / (2*math.pi)
 
 def radius_from_diameter(d):
-    d / 2
+    return d / 2
 
 def quarter_circle_perimeter(r):
     return (math.pi * r / 2) + (2 * r)
